@@ -9,5 +9,6 @@ export default function RenderRanking({ b }) {
                     <StyledItem>{value[0]}</StyledItem> 
                     <GetNumberOfMedals country={value[1]}/>                 
                 </StyledList> 
+                
     });
 }

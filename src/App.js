@@ -56,13 +56,15 @@ function App() {
         </Dropdown>
       </div>
       <div>
-        <ul>
         {selectedCountry === 'Choose a Country' ? 
           <section>
             <StyledRankingTitle>
               Ranking de Medalhas
             </StyledRankingTitle>
-            <RenderRanking b={b}></RenderRanking>
+            <StyledRanking>
+              <RenderRanking b={b}/>
+            </StyledRanking>
+            
             
           </section>
           :
@@ -70,9 +72,7 @@ function App() {
             Medalhas ganhas por {selectedCountry} 
             <MedalistInfoByCountry country={a[selectedCountry]}/>
           </h1>
-        }
-        </ul>
-        
+        }      
       </div>
       
     </StyledBackground> 

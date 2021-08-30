@@ -1,16 +1,11 @@
 import React from "react";
-import { StyleRankingFrame, StyledItem } from '../styles';
+import { StyleRankingFrame, StyledItem, StyledRanking } from '../styles';
 
 function MedalistInfoByCountry({ country }) {
-
   return (
     <StyleRankingFrame>
       {country.map((value)=>{
-        return (
-          <StyleRankingFrame>
-            <StyledItem>{value.athlete}, {value.event}, {value.medal}</StyledItem>
-          </StyleRankingFrame>
-        )
+        return <StyledItem>{value.athlete}, {value.event}, {value.medal}</StyledItem>         
       })}
     </StyleRankingFrame>
   )

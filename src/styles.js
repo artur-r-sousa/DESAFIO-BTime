@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import blurry from './assets/blurry.svg';
 
 export const StyleRankingFrame = styled.div`
-    margin-bottom: 30px;
+    margin-left: 5vw;
 `
 
 export const StyledBackground = styled.div`
